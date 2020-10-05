@@ -1,4 +1,4 @@
-//how create a new repo
+// How create a new repo
 
 mkdir new_folder
 cd new_folder
