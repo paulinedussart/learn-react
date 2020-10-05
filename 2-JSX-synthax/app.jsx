@@ -28,7 +28,7 @@ function render() {
 
 // Keys help React to identify which items in a list have changed,
 // have been added or removed. You must give a key to each item 
-// in a table in order to give the elements a stable identity.
+// in a table in order to give the elements a stable identity
 
 render()
 
