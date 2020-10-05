@@ -22,4 +22,4 @@ render()
 // sur lequel a été branché l'objet title. 
 // React va être capable de détécter à chaque render() la différence entre les deux versions
 // ici c'est la valeur du counter
-// React va donc effectuer une seul modification à savoir le contenu du span pour coller auw changements de l'utilisateur. 
+// React va donc effectuer une seul modification à savoir le contenu du span pour coller auw changements de l'utilisateur
