@@ -11,7 +11,7 @@ class	Welcome extends React.Component {
 		// If you are not using this.props in the constructor there is no need to pass props to the super().
 		
 		console.log(props);
-		// refer {name: "Pauline", children: "Aujourd'hui nous apprenons l'utilisation des composants"}
+		// refer {name: "Pauline", children: "today is raining"}
 		// super() : Instead of this.props, you can always use props.
 	}
 	
@@ -21,7 +21,7 @@ class	Welcome extends React.Component {
 		console.log(this);
 		// refer Welcome {props: {…}, context: undefined, refs: {…}, updater: {…}}
 		console.log(this.props);
-		// refer {name: "Pauline", children: "Aujourd'hui nous apprenons l'utilisation des composants"}
+		// refer {name: "Pauline", children: "today is raining"}
 		return <div>
 						<h1>Welcome {this.props.name}</h1>
 						<p>{this.props.children}</p>
@@ -29,4 +29,15 @@ class	Welcome extends React.Component {
 	}
 }
 
-ReactDOM.render(<Welcome name="Pauline">Aujourd'hui nous apprenons l'utilisation des composants</Welcome>, document.querySelector("#app"))
+ReactDOM.render(<Welcome name="Pauline">today is raining</Welcome>, document.querySelector("#app"))
+
+// composants Welcome dans le composant List
+function List() {
+	return <div>
+					<Welcome name="Pau"/>
+					<Welcome name="James"/>
+					<Welcome name="Pauline">try stuff</Welcome>
+				 </div>
+}
+
+ReactDOM.render(<List/>, document.querySelector("#app"))
