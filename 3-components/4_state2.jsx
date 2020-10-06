@@ -42,17 +42,16 @@ class Incrementer extends React.Component {
 
 Incrementer.defaultProps  = {
 	start: 1,
-	step: 3,
+	step: 2,
 }
 
 
 function Things() {
-	return 
-		<div>
-		  <Incrementer start={0} step={10}/>
-		  <Incrementer start={100} step={1}/>
-		  <Incrementer/>
-	  </div>
+	return <div>
+					<Incrementer start={10} step={10}/>
+					<Incrementer start={100}/>
+					<Incrementer/>
+				 </div>
 }
 
 ReactDOM.render(<Things/>, document.querySelector("#app"))
