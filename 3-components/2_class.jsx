@@ -31,7 +31,7 @@ class	Welcome extends React.Component {
 
 ReactDOM.render(<Welcome name="Pauline">today is raining</Welcome>, document.querySelector("#app"))
 
-// composants Welcome dans le composant List
+// composants Welcome dans le composant fonctionnel List
 function List() {
 	return <div>
 					<Welcome name="Pau"/>
