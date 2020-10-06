@@ -33,11 +33,12 @@ ReactDOM.render(<Welcome name="Pauline">today is raining</Welcome>, document.que
 
 // composants Welcome dans le composant fonctionnel List
 function List() {
-	return <div>
-					<Welcome name="Pau"/>
-					<Welcome name="James"/>
-					<Welcome name="Pauline">try stuff</Welcome>
-				 </div>
+	return 
+		<div>
+			<Welcome name="Pau"/>
+			<Welcome name="James"/>
+			<Welcome name="Pauline">try stuff</Welcome>
+		</div>
 }
 
 ReactDOM.render(<List/>, document.querySelector("#app"))
