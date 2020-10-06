@@ -54,4 +54,4 @@ function Things() {
 				 </div>
 }
 
-ReactDOM.render(<Things/>, document.querySelector("#app"))
+// ReactDOM.render(<Things/>, document.querySelector("#app"))

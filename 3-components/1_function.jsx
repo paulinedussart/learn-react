@@ -19,10 +19,11 @@ ReactDOM.render(<Welcome2 name="Pauline"/>, document.querySelector("#app"))
 
 // children contient ici tous les enfants
 function Welcome3 ({name, children}) {
-	return <div>
-					  <h1>Welcome {name}</h1>
-						<p>{children}</p>
-				 </div>
+	return 
+		<div>
+		  <h1>Welcome {name}</h1>
+			<p>{children}</p>
+	 </div>
 }
 
 ReactDOM.render(<Welcome3 name="Pauline">Aujourd'hui nous apprenons l'utilisation des composants</Welcome3>, document.querySelector("#app"))
