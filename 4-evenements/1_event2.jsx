@@ -98,7 +98,7 @@ class ManualIncrementer extends React.Component {
 	}
 }
 
-ReactDOM.render(<ManualIncrementer/>, document.querySelector("#app"));
+// ReactDOM.render(<ManualIncrementer/>, document.querySelector("#app"));
 
 // Le render va être fait à chaque changement d'état
 // dans ce cas présent, this.action.bind(this) va créer une nouvelle fonction toutes les secondes
