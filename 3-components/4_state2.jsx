@@ -47,12 +47,11 @@ Incrementer.defaultProps  = {
 
 
 function Things() {
-	return 
-		<div>
-			<Incrementer start={10} step={10}/>
-			<Incrementer start={100}/>
-			<Incrementer/>
-		</div>
+	return 	<div>
+						<Incrementer start={10} step={10}/>
+						<Incrementer start={100}/>
+						<Incrementer/>
+					</div>
 }
 
-// ReactDOM.render(<Things/>, document.querySelector("#app"))
+//ReactDOM.render(<Things/>, document.querySelector("#app"))

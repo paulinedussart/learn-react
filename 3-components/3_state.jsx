@@ -42,7 +42,7 @@ class Clock extends React.Component {
 	}
 }
 
-ReactDOM.render(<Clock/>, document.querySelector("#app"))
+// ReactDOM.render(<Clock/>, document.querySelector("#app"))
 
 
 // https://fr.reactjs.org/docs/state-and-lifecycle.html
