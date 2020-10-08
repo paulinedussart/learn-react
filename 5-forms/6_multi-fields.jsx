@@ -1,3 +1,5 @@
+// CONTREOLED FIELD 
+
 class Form extends React.Component {
 	// targeter la saisie utilisateur
 	constructor(props) {
@@ -32,14 +34,16 @@ class Form extends React.Component {
 				<input 
 					type="text" 
 					name="name" 
+					placeholder="your name"
 					value={this.state.nom} 
 					onChange={this.handleChange}/> 
 			</label><br/>
 			<label>
         Prénom :
         <input
-          name="prenom"
           type="text"
+					name="prenom"
+					placeholder="your first_name"
           value={this.state.prenom}
           onChange={this.handleChange} />
       </label><br/>
