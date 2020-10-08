@@ -6,7 +6,6 @@ class ManualIncrementer extends React.Component {
 		this.state = {counter: 0, timer: null};
 		this.action = this.action.bind(this)
 		this.restart = this.restart.bind(this)
-
 	}
 	
 	increment(){
@@ -42,7 +41,6 @@ class ManualIncrementer extends React.Component {
 	}
 
 	action() {
-
 		return this.state.timer ? this.pause() : this.play()
 	}
 
@@ -78,23 +76,18 @@ class ManualIncrementer extends React.Component {
 		
 		// lLOGIQUE CONSTANTE
 		// const label = this.state.timer ? "Pause" : "Play" 
-	
 		// const action = this.state.timer ? this.pause.bind(this) : this.play.bind(this)
-
 		// return <div> 
 		// 				Valeur : {this.state.counter} <br/>
 		// 				<button onClick={action}>{label}</button>
 		// 			</div>
 
-
 		// LOGIQUE FONCTION 
-
 		return <div> 
 						Valeur : {this.state.counter} <br/>
 						<button onClick={this.action}>{this.label()}</button>
 						<button onClick={this.restart}>Recommancer</button>
 					</div>
-
 	}
 }
 
@@ -105,5 +98,6 @@ class ManualIncrementer extends React.Component {
 // afin d'éviter cela on va aller stocker notre fonction dans le constructeur
 // this.action = this.action.bind(this)
 // this.restart = this.restart.bind(this)
+// cela permet d'utiliser toujours la même fonction 
 
 

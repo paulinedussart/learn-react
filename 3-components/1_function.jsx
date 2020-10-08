@@ -26,4 +26,4 @@ function Welcome3 ({name, children}) {
 	 </div>
 }
 
-ReactDOM.render(<Welcome3 name="Pauline">Aujourd'hui nous apprenons l'utilisation des composants</Welcome3>, document.querySelector("#app"))
+//ReactDOM.render(<Welcome3 name="Pauline">Aujourd'hui nous apprenons l'utilisation des composants</Welcome3>, document.querySelector("#app"))

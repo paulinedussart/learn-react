@@ -41,4 +41,4 @@ function List() {
 		</div>
 }
 
-ReactDOM.render(<List/>, document.querySelector("#app"))
+//ReactDOM.render(<List/>, document.querySelector("#app"))

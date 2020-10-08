@@ -30,7 +30,7 @@ function render() {
 // have been added or removed. You must give a key to each item 
 // in a table in order to give the elements a stable identity
 
-render()
+//render()
 
 // window.setInterval(() => {
 // 	counter += 1 
