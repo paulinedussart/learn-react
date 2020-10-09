@@ -1,5 +1,5 @@
-function BoilingVerdict ({temperature}) {
-	if (parseInt(temperature) >= 100) {
+function BoilingVerdict (props) {
+	if (parseInt(props.temperature) >= 100) {
 		return <div className="alert alert-danger" role="alert"> Attention, l'eau bout !!!</div>
 	} else {
 		return <div className="alert alert-success" role="alert">Pas de danger, l'eau ne bout pas !</div>
