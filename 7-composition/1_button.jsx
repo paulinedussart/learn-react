@@ -19,7 +19,6 @@ function BtnYellow ({children}) {
 	return <Buttons color="warning">{children}</Buttons>
 }
 
-
 function Page () {
 	return <div className="container mt-5">
 					<BtnBlue>Click</BtnBlue><br/><br/>
