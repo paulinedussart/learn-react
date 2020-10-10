@@ -39,7 +39,7 @@ class SignUpDialog extends React.Component {
 			title="Welcome to Jurassik Park 🦖🦕"
 			text="First name on the boarding PASS ?">
 				<form className="form-inline" onSubmit={this.handleSubmit}>
-				<input type="text" autoComplete="off" name="first_name" id="first_name" className="form-control" value={this.state.firstName} onChange={this.handleChange}/>
+				<input type="text" autoComplete="off"  className="form-control" value={this.state.firstName} onChange={this.handleChange}/>
 				<button type="submit" className="btn btn-success m-2">Submit</button>
 				</form>
 				{this.state.state && <BoardingPass name={this.state.firstName}/>}
