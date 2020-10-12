@@ -107,7 +107,7 @@ class FilterableProductTable extends React.Component {
 	render () {
 		const {data} = this.props
 		return ( 
-			<div className="container col-4 mt-4">
+			<div className="container col-4 mt-">
 			<h1>🦥 Paulin's Store 🦃</h1>
 			<SearchBar productName={this.state.productName} stockStatus={this.state.stock} onProductNameChange={this.handleProductNameChange} onStockChange={this.handleStockChange}/>
 			<ProductTable data={data} productName={this.state.productName} stockStatus={this.state.stock} />

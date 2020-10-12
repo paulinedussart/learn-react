@@ -14,26 +14,26 @@ const result = callbackAcceptingFunction(callback)
 console.log(result) // 6
 
 // ____________________________________________________________________________
-function Child({ color,  onChildClick }) {
-  function handleClick(event) {
-    onChildClick(event.target.name); // pass any argument to the callback
-  }
-  return (
-    <button name={color} onClick={handleClick}>{color}</button>
-  )
-}
+// function Child({ color,  onChildClick }) {
+//   function handleClick(event) {
+//     onChildClick(event.target.name); // pass any argument to the callback
+//   }
+//   return (
+//     <button name={color} onClick={handleClick}>{color}</button>
+//   )
+// }
 
-function Parent() {
-  const [color, setColor] = useState('');
-  function handleChildClick(color) {
-    setColor(color);
-  }
-  return (
-    <>
-      <h1>selected color: {color}</h1>
-      {['green','red','blue'].map((color) => (
-        <Child color={color} onChildClick={handleChildClick} ... />
-      ))}
-    </>
-  )
-}
+// function Parent() {
+//   const [color, setColor] = useState('');
+//   function handleChildClick(color) {
+//     setColor(color);
+//   }
+//   return (
+//     <>
+//       <h1>selected color: {color}</h1>
+//       {['green','red','blue'].map((color) => (
+//         <Child color={color} onChildClick={handleChildClick} ... />
+//       ))}
+//     </>
+//   )
+// }
