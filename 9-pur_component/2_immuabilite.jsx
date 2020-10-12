@@ -18,12 +18,12 @@
 // // il vaut mieux utiliser le spread operator
 // console.log(obj3 === obj1);
 // // false
-// ✅ // ici comme les elements sont différents, React rendera la nouvelle liste 
-// ⚠️ // Toujours renvoyer un nouvelle object rpz le nouvel état et non muter l'état précedant. 
+// ✅  ici comme les elements sont différents, React rendera la nouvelle liste 
+// ⚠️  Toujours renvoyer un nouvel object rpz le nouvel état et non muter l'état précedant. 
 
-// // 2eme probabilite : Quand la comparaison des etats  de l'éelement > au render de l'element 
+// // ** 2eme probabilite ** : Quand la comparaison des etats  de l'éelement > au render de l'element 
 
-// // 3eme problematique 
+// // ** 3eme problematique **
 // // Attention à la definition des callback car certaines synthaxes ne permettent pas la memorisation. 
 // //  ce sera une nouvelle fonction à chaque fois et déclancherai un render à chq fois
 // // TOUJOURS LA MEME FONCTION QUI EST ENVOYEE
