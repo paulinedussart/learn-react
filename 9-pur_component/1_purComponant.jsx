@@ -4,7 +4,6 @@
 // la function si c'est un composant Fonctionnel
 
 const { PureComponent } = require("react");
-
  
 // CLASS
 class Component extends React.PureComponent {}

@@ -1,5 +1,5 @@
 // REFERENCES
-// Quand on veut intéragir avec le DOM cas d'usage: 
+// Quand on veut intéragir avec le DOM avec 2 cas d'usage: 
 // utiliser des librairies JS spécifiques 
 // utiliser des champs non controlés avec React
 
@@ -8,7 +8,7 @@ class App extends React.Component {
 		super(props)
 		this.input = null 
 	}
-	// l'arrow function permet de garder le contect du this
+	// l'arrow function permet de garder le context du this
 	handleClick = (event) => {
 		console.log(this.input.value);
 	}
