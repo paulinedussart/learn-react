@@ -8,16 +8,39 @@ const useIncrement = (initialValue = 0, step = 1) => {
 
 	return [count, increment]
 }
+// Hook d'autoIncrementation
+const useAutoIncrement = (initialValue = 0, step = 1) => {
+
+	const [autoCount, setAutoCount] = React.useState(initialValue)
+
+	React.useEffect(() => {
+
+		const timer = setInterval( 
+			function() {
+				setAutoCount(autoCount => autoCount + 1)
+			},
+		  1000
+		)
+
+		return function () {
+			clearInterval(timer)
+		}
+
+	}, [])
+
+	return [autoCount]
+}
 
 // Composant Compteur
 const Compteur = () => {
-	const [count, setCount ] = useIncrement()
+	const count = useAutoIncrement()
+	
 	React.useEffect(() => {
     document.title = `Vous avez cliqué ${count} fois`;
   });
 
 	return (
-		<button className="btn btn-primary" onClick={setCount}>Incrementer {count}</button>
+		<button className="btn btn-primary">Incrementer {count}</button>
 	)
 }
 
@@ -31,7 +54,7 @@ const useToogle = (initial) => {
 	return [check, handleChange]
 }
 
-
+// Notre composant App
 function App () {
 	const [compteurVisible, handleClick] = useToogle(true)
 	
@@ -49,6 +72,7 @@ function App () {
 	)
 }
 
+// Le render DOM
 ReactDOM.render(
 	<div className="container mt-5 col-3">
 		<App/>
