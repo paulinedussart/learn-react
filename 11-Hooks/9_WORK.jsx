@@ -3,11 +3,12 @@ const Item = () => {
 	let itemm = []
 	function handleBuy (candy) {
 		setCandies(candyStock => candyStock.filter(element => element !== candy ))
-		console.log(candy);
-		itemm.push(candy)
-		console.log(itemm);	
 	}
-
+	
+	function handleCandy () {
+		setCandies(ITEMS)
+	} 
+	
 	return (
 		<ul>
 		<div></div>
@@ -16,13 +17,8 @@ const Item = () => {
 				<button onClick={() => handleBuy(element)} className="btn btn-info mr-2">Buy</button>
 				{element}
 			</li>)}
+			<button onClick={handleCandy}className="btn btn-warning"><h5>Refill the Shop !</h5></button>
 		</ul>
-	)
-}
-
-const Refill = () => {
-	return (
-		<button className="btn btn-warning"><h5>Refill the Shop !</h5></button>
 	)
 }
 
@@ -40,7 +36,6 @@ const App = () => {
 		<div className="container mt-3 col-4">
 			<CandyShop/>
 			<Item/>
-			<Refill/>
 		</div>
 	)
 }
