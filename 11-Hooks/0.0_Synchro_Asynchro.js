@@ -53,13 +53,18 @@ function runWhileLoopForNSeconds(sec) {
 	}
 }
 
-// A s'affiche en console
-// 1. ici runWhileLoopForNSeconds vérifie si le temps écoulé est égal au nombre donné en paramètre
+// A
+// 3s
+// C
+// B
+
+// 1. A s'affiche en console
+// 2. ici runWhileLoopForNSeconds vérifie si le temps écoulé est égal au nombre donné en paramètre
 			// tant qu'il n'est pas égal, il n'executera pas la suite
-// 2. runWhileLoopForNSeconds ne dépend pas d'API
+// 3. runWhileLoopForNSeconds ne dépend pas d'API
 			// n'est donc pas mise dans la file d'attente "Browser API"
 			// elle est bloquante car executée sur la pile d'attente
-// 3. Il sera necessaire d'attendre la fin de son exécution pour passer à la suite 	
-// 4. 		
+// 4. Il sera necessaire d'attendre un delai de 3s (fin de l'éxécution) pour passer à la suite 	
+// 5. étape 3 à 6 first versions		
 
 			
