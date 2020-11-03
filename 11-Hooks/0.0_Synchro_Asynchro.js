@@ -81,7 +81,10 @@ function runWhileLoopForNSeconds(sec) {
 			// elle va appeler le callback en lui passant le résultat
 			// de cette manière, le code executé de manière asynchrone 
 
-			element.addEventListener('click', function(e) {
+			element.addEventListener('click',   {
 				// Do something here ... 
 			});
+
+			// le 2nd argt est un callback
+			// il ne bloque pas l'execution du code (il est donc asynchrone) 
 

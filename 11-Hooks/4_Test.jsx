@@ -44,7 +44,7 @@ const Compteur = () => {
 	)
 }
 
-// Hook de Toggle
+// Hook  Toggle
 const useToogle = (initial) => {
 	const [check, setCheck] = React.useState(initial)
 	
