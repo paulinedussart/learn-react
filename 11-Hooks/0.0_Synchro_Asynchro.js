@@ -68,3 +68,20 @@ function runWhileLoopForNSeconds(sec) {
 // 5. étape 3 à 6 first versions		
 
 			
+// ** CODE SYNCHRONE EN JAVASCRIPT ** 
+			// code qui s'execute ligne par en ligne 
+			// en attendant la fin de l'execution de la ligne precedente pour passer à la suivante
+// ** CODE ASYNCHRONE EN JAVASCRIPT **
+			// code qui s'ecrit ligne par ligne 
+			// il n'attendra pas que la ligne précédente (asynchrone) ai fini de s'executer 
+
+// ** CALLBACK **
+			// Les callbacks sont une fonction que l'on passe à une fonction asynchrone 
+			// une fois que la fonction asynchorne aura terminé sa tâche 
+			// elle va appeler le callback en lui passant le résultat
+			// de cette manière, le code executé de manière asynchrone 
+
+			element.addEventListener('click', function(e) {
+				// Do something here ... 
+			});
+
