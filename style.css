@@ -1,0 +1,25 @@
+/* 9.4 */
+.btn-calcul {
+  width: 50px;
+  height: 50px;
+  background-color: yellowgreen;
+  box-shadow: 2px 2px 3px darkslategrey;
+  border-radius: 50%;
+  text-align: center;
+  border: none;
+  color: white;
+  padding-bottom: 3px;
+}
+
+.btn-calcul:focus {
+  outline: none;
+}
+
+.btn-calcul:active {
+  background-color: #7fb118;
+}
+
+.age {
+  width: 160px;
+  text-align: center;
+}
