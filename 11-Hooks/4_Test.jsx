@@ -10,24 +10,20 @@ const useIncrement = (initialValue = 0, step = 1) => {
 }
 // Hook d'autoIncrementation
 const useAutoIncrement = (initialValue = 0, step = 1) => {
-
 	const [autoCount, setAutoCount] = React.useState(initialValue)
 
 	React.useEffect(() => {
-
 		const timer = setInterval( 
 			function() {
 				setAutoCount(autoCount => autoCount + 1)
 			},
 		  1000
 		)
-
 		return function () {
 			clearInterval(timer)
 		}
-
 	}, [])
-
+	
 	return [autoCount]
 }
 
