@@ -20,6 +20,7 @@ function FormContext ({defaultValue, children, onSubmit}) {
 	const handleSubmit = React.useCallback(function() {
 		onSubmit(valeur)
 	}, [onSubmit, valeur])
+
 	return (
 		<FormContexted.Provider value={valeur}>
 			<form onSubmit={handleSubmit} >
@@ -31,11 +32,12 @@ function FormContext ({defaultValue, children, onSubmit}) {
 }
 
 function FormField ({name, children}) {
-
 	const data = React.useContext(FormContexted)
+
 	const handleChange = React.useCallback(function (event) {
 		data.change(event.target.name, event.target.value)
 	}, [data.change])
+
 	return(
 		<div className="form-group">
 			<label htmlFor={name}>{children}</label>
@@ -47,7 +49,7 @@ function FormField ({name, children}) {
 
 function App () {
 	const handleSubmit = React.useCallback( function (value) {
-		event.preventDefault()
+		e.preventDefault()
 		console.log(value);
 	}, [])
 
